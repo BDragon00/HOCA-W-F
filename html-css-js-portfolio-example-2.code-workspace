@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../html-css-js-portfolio-example-2"
+		},
+		{
+			"path": "../HoCa (1)"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HOCA-W-F"
+	}
+}

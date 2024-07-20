@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Hồ Cá CSS3</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	</style>
+	<script>
+		let currentTrack = 1;
+	
+		function changeTrack() {
+			const audio1 = document.getElementById('audio1');
+			const audio2 = document.getElementById('audio2');
+			
+			if (currentTrack === 1) {
+				audio1.style.display = 'none';
+				audio1.pause();
+				audio2.style.display = 'block';
+				audio2.play();
+				currentTrack = 2;
+			} else {
+				audio2.style.display = 'none';
+				audio2.pause();
+				audio1.style.display = 'block';
+				audio1.play();
+				currentTrack = 1;
+			}
+		}
+		let track=1;
+		function changeTrack2() {
+			const img1 = document.getElementById('img1');
+			const img2 = document.getElementById('img2');
+			
+			if (track === 1) {
+				img1.style.display = 'none';
+				img2.style.display = 'block';
+				track = 2;
+			} else {
+				img2.style.display = 'none';
+
+				img1.style.display = 'block';
+
+				track = 1;
+			}
+		}
+	</script>
+</head>
+<body>
+<div class="header">
+	<h1> HỒ LOCH NESS</h1>
+</div>	
+
+<audio id="audio1" autoplay loop controls>
+	<source src="Audio/lotus-sky-dreams-216049.mp3" type="audio/mp3">
+	Trình duyệt của bạn không hỗ trợ thẻ audio.
+</audio>
+
+<audio id="audio2" controls style="display: none;">
+	<source src="Audio/in-slow-motion-inspiring-ambient-lounge-219592.mp3" type="audio/mp3">
+	Trình duyệt của bạn không hỗ trợ thẻ audio.
+</audio>
+<div>
+<button onclick="changeTrack()">Đổi bài</button>
+</div>
+
+
+<div>
+<button onclick="changeTrack2()">Đổi ảnh</button>
+</div>
+
+
+
+<!-- noi dung -->
+ <div class="main-container">
+	<div class="contener">
+		<div class="aquarium">
+			<div class="bg">
+				<img id="img1" src="images/bg.jpg">
+				<img id="img2" src="images/bg2.jpg">
+			</div>
+			<div class="light">
+				<span class="light-1"></span>
+				<span class="light-2"></span>
+				<span class="light-3"></span>
+			</div>
+			<div class="water"></div>
+			<div class="boder boder-top"></div>
+			<div class="boder boder-bottom"></div>
+			<div class="fish fish-1"></div>
+			<div class="fish fish-2"></div>
+			<div class="fish fish-3"></div>
+			<div class="fish fish-4"></div>
+			<div class="fish fish-5"></div>
+			<div class="fish seaweed"></div>
+			<div class="fish seaweed2"></div>
+			<div class="fish bubble"></div>
+			
+		</div>
+	</div>
+	<!-- <div class="sidebar">
+		<div class="Menu">
+			<ul>
+				<li><a href="#">Trang chủ</a></li>
+				<li><a href="#">Giới thiệu</a></li>
+				<li><a href="#">Sản phẩm</a></li>
+				<li><a href="#">Tin tức</a></li>
+				<li><a href="#">Liên hệ</a></li>
+			</ul>
+		</div>
+	</div> -->
+</div>
+
+
+
+</body>
+</html>
